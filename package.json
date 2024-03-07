@@ -1,6 +1,18 @@
 {
+  "name": "troutsoda-com",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "arc deploy --production",
+    "check": "biome check --apply ./",
+    "lint": "biome lint --apply ./",
+    "format": "biome format --write ./",
+    "test": "npm run check"
+  },
   "dependencies": {
-    "@architect/architect": "^10.3.3",
-    "@architect/functions": "^5.2.0-RC.0"
+    "@architect/architect": "^11.0.5",
+    "@architect/functions": "^8.0.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3"
   }
 }
